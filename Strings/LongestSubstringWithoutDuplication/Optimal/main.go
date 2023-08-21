@@ -10,14 +10,12 @@ func LongestSubstringWithoutDuplication(str string) string {
 	// lastSeenIdx := 0
 	for i, c := range []byte(str) {
 		if v, ok := locationMap[c]; !ok {
-			if len(currSubStr) == 0 {
-				startIdx = i
-			}
-			locationMap[c] = i
+			// if len(currSubStr) == 0 {
+			// 	startIdx = i
+			// }
 			currSubStr += string(c)
 			// fmt.Println("13 cur sub str", currSubStr, c, v)
 		} else {
-			locationMap[c] = i
 			if len(currSubStr) > len(maxSubStr) {
 				maxSubStr = currSubStr
 			}
@@ -26,6 +24,7 @@ func LongestSubstringWithoutDuplication(str string) string {
 			currSubStr = str[startIdx : i+1]
 			// fmt.Println("21 cur sub str", currSubStr, c, v)
 		}
+		locationMap[c] = i
 	}
 	if len(currSubStr) > len(maxSubStr) {
 		maxSubStr = currSubStr
@@ -33,12 +32,14 @@ func LongestSubstringWithoutDuplication(str string) string {
 	return maxSubStr
 }
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
+// In Latest version of Go Max is inbuilt function
+
+// func max(a, b int) int {
+// 	if a > b {
+// 		return a
+// 	}
+// 	return b
+// }
 
 func main() {
 	input := "clementisacap"
