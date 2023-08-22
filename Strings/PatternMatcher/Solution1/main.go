@@ -83,14 +83,18 @@ func isValidPattern(pattern, str string, patternSize map[rune]int) ([]string, bo
 func main() {
 	pattern := "xxyxxy"
 	str := "gogopowerrangergogopowerranger"
-	fmt.Println(PatternMatcher(pattern, str))
+	fmt.Println("Pattern: ", pattern, "String: ", str)
+	fmt.Println("Output: ", PatternMatcher(pattern, str))
 	pattern = "xyx"
 	str = "thisshouldobviouslybewrong"
-	fmt.Println(PatternMatcher(pattern, str))
+	fmt.Println("Pattern: ", pattern, "String: ", str)
+	fmt.Println("Output: ", PatternMatcher(pattern, str))
 	pattern = "yxyx"
 	str = "abab"
-	fmt.Println(PatternMatcher(pattern, str))
+	fmt.Println("Pattern: ", pattern, "String: ", str)
+	fmt.Println("Output: ", PatternMatcher(pattern, str))
 	pattern = "xxxx"
 	str = "testtesttesttest"
-	fmt.Println(PatternMatcher(pattern, str))
+	fmt.Println("Pattern: ", pattern, "String: ", str)
+	fmt.Println("Output: ", PatternMatcher(pattern, str))
 }
