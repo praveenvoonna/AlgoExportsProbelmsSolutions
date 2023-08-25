@@ -11,7 +11,7 @@ func Semordnilap(words []string) [][]string {
 		semordnilap[word] = false
 	}
 	// fmt.Println(semordnilap)
-	for word, _ := range semordnilap {
+	for word := range semordnilap {
 		reverseStr := reverseString(word)
 		// fmt.Println(word, reverseStr)s
 		if _, ok := semordnilap[reverseStr]; ok && word != reverseStr {
