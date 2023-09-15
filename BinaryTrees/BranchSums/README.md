@@ -5,7 +5,7 @@ A branch sum is the sum of all values in a Binary Tree branch. A Binary Tree bra
 Each BinaryTree node has an integer value, a left child node, and a right child node. Children nodes can either be BinaryTree nodes themselves or None / null.
 
 ## Sample Input
-![Alt Text](https://github.com/praveenvoonna/AlgoExportsProbelmsSolutionsWithGo/blob/main/BinaryTrees/BranchSums/inputTree.png?raw=true)
+![Input Tree](https://github.com/praveenvoonna/AlgoExportsProbelmsSolutionsWithGo/blob/main/BinaryTrees/BranchSums/inputTree.png?raw=true)
 
 ## Sample Output
 [15, 16, 18, 10, 11]
