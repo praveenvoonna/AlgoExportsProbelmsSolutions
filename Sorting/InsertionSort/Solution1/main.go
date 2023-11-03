@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func InsertionSort(array []int) []int {
-	for i, _ := range array {
+	for i := range array {
 		for j := i; j > 0 && array[j] < array[j-1]; j-- {
 			array[j], array[j-1] = array[j-1], array[j]
 		}
