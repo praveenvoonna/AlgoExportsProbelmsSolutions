@@ -15,6 +15,7 @@ func QS(array []int, left int, right int) []int {
 	QS(array, pivot+1, right)
 	return array
 }
+
 func Partition(array []int, left int, right int) int {
 	pivot := array[left]
 	i := left

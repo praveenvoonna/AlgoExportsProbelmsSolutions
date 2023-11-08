@@ -22,8 +22,8 @@ func RadixSort(array []int) []int {
 }
 
 func RS(array []int, digit int) []int {
-	sorted := make([]int, len(array), len(array))
-	counts := make([]int, 10, 10)
+	sorted := make([]int, len(array))
+	counts := make([]int, 10)
 	for _, num := range array {
 		counts[(num/digit)%10]++
 	}
